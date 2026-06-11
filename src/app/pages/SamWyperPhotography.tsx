@@ -16,7 +16,7 @@ const entries = [
   { time: "3:30pm", items: ["Ceremony ends"] },
   { time: "3:40pm", items: ["Congratulation shots - hugs and high-fives"] },
   { time: "3:50pm", items: ["Portraits - wedding couple and with bridal party"] },
-  { time: "4:50pm", items: ["Family and friends photos"], button: "View photography schedule" },
+  { time: "4:50pm", items: ["Family and friends photos"] },
   { time: "5:08pm", items: ["Wedding couple sunset portraits"] },
   { time: "9:30pm", items: ["Coverage concludes"] },
 ];
@@ -34,7 +34,6 @@ export default function SamWyperPhotography() {
                 <p className="text-[13px] font-normal text-[#999] uppercase tracking-wide">Photographer</p>
                 <p className="text-[24px] font-medium">Sam Wyper Photography</p>
                 <p className="text-[14px] font-normal text-[#666]">Saturday, 18 July 2026</p>
-                <p className="text-[13px] font-normal text-[#666]">This run sheet is only for the day of the wedding.</p>
               </div>
             </div>
 

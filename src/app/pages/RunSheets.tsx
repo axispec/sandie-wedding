@@ -31,6 +31,7 @@ const vendors = [
     phone: "Phone",
     email: "hello@samwyperphotography.com",
     runSheet: true,
+    buttonLink: "/run-sheets/sam-wyper-photography",
   },
   {
     emoji: "▶️",
