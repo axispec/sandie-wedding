@@ -3,6 +3,7 @@ import { useState } from "react";
 type TimelineEntry = {
   time: string;
   items: string[];
+  bold?: boolean[];
   button?: string;
   onButtonClick?: () => void;
 };
@@ -21,11 +22,11 @@ export default function IndividualTimeline({ entries, collapsible, defaultOpen =
       {entries.map((entry, i) => (
         <div key={i} className="flex gap-[24px] px-[16px] py-[20px] border-b border-[#d4d4d4]">
           <div className="w-[80px] shrink-0">
-            <p className="text-[16px] leading-[1.4]">{entry.time}</p>
+            <p className="text-[16px] leading-[1.4] whitespace-pre-line">{entry.time}</p>
           </div>
           <div className="flex-1 flex flex-col gap-[12px]">
             {entry.items.map((item, j) => (
-              <p key={j} className="text-[16px] leading-[1.4]">{item}</p>
+              <p key={j} className={`text-[16px] leading-[1.4]${entry.bold?.[j] ? " font-semibold" : ""}`}>{item}</p>
             ))}
             {entry.button && (
               <button

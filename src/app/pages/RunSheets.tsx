@@ -39,6 +39,7 @@ const vendors = [
     phone: "Phone",
     email: "fiddlefigfilms@hotmail.com",
     runSheet: true,
+    buttonLink: "/run-sheets/sam-wyper-photography",
   },
   {
     emoji: "🎵",
@@ -46,6 +47,7 @@ const vendors = [
     phone: "Phone",
     email: "garethmewes@gmail.com",
     runSheet: true,
+    buttonLink: "/run-sheets/live-band",
   },
   {
     emoji: "🛣️",
@@ -53,6 +55,7 @@ const vendors = [
     phone: "TBC",
     email: "TBC",
     runSheet: true,
+    buttonLink: "/run-sheets/gosels-bus-service",
   },
   {
     emoji: "🌿",
@@ -80,7 +83,8 @@ const vendors = [
     name: "A+J Photobooth",
     phone: "Phone",
     email: "aplusjphotobooth@gmail.com",
-    runSheet: false,
+    runSheet: true,
+    buttonLink: "/run-sheets/photo-booth",
   },
   {
     emoji: "📬",

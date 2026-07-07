@@ -3,17 +3,16 @@ import BottomNav from "../components/BottomNav";
 import IndividualTimeline from "../components/IndividualTimeline";
 
 const entries = [
-  { time: "1:00pm", items: ["Arrives at the venue and set up in the cabana area"] },
-  { time: "1:30pm", items: ["Start serving bridal party drinks if requested"] },
-  { time: "2:00pm", items: ["Start serving drinks to guests"] },
-  { time: "3:00pm", items: ["Pause serving drinks for ceremony"] },
-  { time: "3:30pm", items: ["Resume serving drinks after ceremony has ended"] },
-  { time: "4:00pm", items: ["First set of canapes served"] },
-  { time: "4:30pm", items: ["Second set of canapes served"] },
-  { time: "5:00pm", items: ["Serve pizzas"] },
-  { time: "6:00pm", items: ["Pause serving food"] },
-  { time: "6:30pm", items: ["Resume serving food", "Serve desserts"] },
-  { time: "8:00pm", items: ["Stop serving food and desserts", "Set up leftovers in the pavilion"] },
+  { time: "1:00pm", items: ["Arrive at the venue and set up in the cabana area (or whatever time you think is early enough)"] },
+  { time: "2:00pm", items: ["Guests gradually start arriving", "Serve guests bubbly and 2x cold canapes on arrival", "Bar is not open yet"], bold: [false, false, true] },
+  { time: "2:45pm", items: ["Ceremony begins (or in the follow 15 mins)"] },
+  { time: "3:30pm", items: ["Approx. ceremony ends", "Bar opens"], bold: [false, true] },
+  { time: "4:00pm", items: ["Three more bite sized canapes"] },
+  { time: "4:30pm", items: ["Three substantial canapes"] },
+  { time: "5:00pm", items: ["Pizzas and then pasta"] },
+  { time: "6:00pm", items: ["Speeches (Food service has concluded ~10 minutes prior to this)"] },
+  { time: "6:30pm", items: ["Serve desserts", "Tiramisu tower must be ready by 6:30pm for photographs"], bold: [false, true] },
+  { time: "8:00pm", items: ["Set up leftovers in the pavilion"] },
   { time: "11:00pm", items: ["Last call for drinks"] },
 ];
 
@@ -39,9 +38,9 @@ export default function Catering() {
 
             {/* Header */}
             <div className="bg-white w-full flex justify-center pt-[12px] pb-[16px] px-[16px]">
-              <div className="flex flex-col gap-[8px] max-w-[360px] w-full">
-                <p className="text-[24px] font-medium">Catering (Bespoke Catering)</p>
-                <p className="text-[14px] font-normal text-[#666]">📞 Andy (<a href="tel:0447710890" className="underline">0447 710 890</a>)</p>
+              <div className="flex flex-col items-center gap-[4px] max-w-[360px] w-full">
+                <p className="text-[24px] font-medium text-center">Caterer</p>
+                <p className="text-[14px] text-[#666] text-center">Bespoke Catering</p>
               </div>
             </div>
 

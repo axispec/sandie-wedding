@@ -8,6 +8,9 @@ import Vendors from "./pages/Vendors";
 import WeddingMenu from "./pages/WeddingMenu";
 import WeddingDrinks from "./pages/WeddingDrinks";
 import SamWyperPhotography from "./pages/SamWyperPhotography";
+import GoselsBusService from "./pages/GoselsBusService";
+import LiveBand from "./pages/LiveBand";
+import Photobooth from "./pages/Photobooth";
 
 export default function App() {
   return (
@@ -21,6 +24,9 @@ export default function App() {
             <Route path="/master-run-sheet" element={<MasterRunSheet />} />
             <Route path="/run-sheets" element={<RunSheets />} />
             <Route path="/run-sheets/sam-wyper-photography" element={<SamWyperPhotography />} />
+            <Route path="/run-sheets/gosels-bus-service" element={<GoselsBusService />} />
+            <Route path="/run-sheets/live-band" element={<LiveBand />} />
+            <Route path="/run-sheets/photo-booth" element={<Photobooth />} />
             <Route path="/vendors" element={<Vendors />} />
             <Route path="/wedding-menu" element={<WeddingMenu />} />
             <Route path="/wedding-drinks" element={<WeddingDrinks />} />
