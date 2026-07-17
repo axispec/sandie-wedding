@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import BottomNav from "../components/BottomNav";
 
 const vendors = [
   {
     emoji: "🍴",
-    name: "Bespoke Catering",
-    phone: "TBC",
+    name: "Bespoke Catering (Andy)",
+    phone: "0447 710 890",
     email: "TBC",
     runSheet: true,
     buttonLabel: "Run sheet & menu",
@@ -13,10 +13,10 @@ const vendors = [
   },
   {
     emoji: "🤍",
-    name: "Honeybee Celebrancy",
-    phone: "Phone",
+    name: "Honeybee Celebrancy (Ellen)",
+    phone: "0403 141 088",
     email: "Email",
-    runSheet: true,
+    runSheet: false,
   },
   {
     emoji: "📍",
@@ -28,46 +28,23 @@ const vendors = [
   {
     emoji: "📷",
     name: "Sam Wyper Photography",
-    phone: "Phone",
+    phone: "0459 252 028",
     email: "hello@samwyperphotography.com",
     runSheet: true,
     buttonLink: "/run-sheets/sam-wyper-photography",
   },
   {
-    emoji: "▶️",
-    name: "Fiddle Fig Films",
-    phone: "Phone",
-    email: "fiddlefigfilms@hotmail.com",
-    runSheet: true,
-    buttonLink: "/run-sheets/sam-wyper-photography",
-  },
-  {
-    emoji: "🎵",
-    name: "Gareth Mewes & Co.",
-    phone: "Phone",
-    email: "garethmewes@gmail.com",
-    runSheet: true,
-    buttonLink: "/run-sheets/live-band",
-  },
-  {
     emoji: "🛣️",
-    name: "Gosels Bus Service",
-    phone: "TBC",
+    name: "Gosels Bus Service (Jeff)",
+    phone: "0427 149 689",
     email: "TBC",
     runSheet: true,
     buttonLink: "/run-sheets/gosels-bus-service",
   },
   {
-    emoji: "🌿",
-    name: "Botanical Avenue (Sophie)",
-    phone: "TBC",
-    email: "hello@botanicalavenue.com.au",
-    runSheet: false,
-  },
-  {
     emoji: "🎪",
     name: "Tweed Party Hire",
-    phone: "Phone",
+    phone: "07 5524 7878",
     email: "Email",
     runSheet: false,
   },
@@ -79,24 +56,9 @@ const vendors = [
     runSheet: false,
   },
   {
-    emoji: "📸",
-    name: "A+J Photobooth",
-    phone: "Phone",
-    email: "aplusjphotobooth@gmail.com",
-    runSheet: true,
-    buttonLink: "/run-sheets/photo-booth",
-  },
-  {
-    emoji: "📬",
-    name: "Off the Hook (Message collector)",
-    phone: "Phone",
-    email: "Email",
-    runSheet: false,
-  },
-  {
     emoji: "🙋",
     name: "Michael - Venue/event support",
-    phone: "Phone",
+    phone: "0459 173 910",
     email: "Email",
     runSheet: false,
   },
@@ -107,14 +69,23 @@ function isPlaceholder(value: string) {
 }
 
 export default function RunSheets() {
+  const navigate = useNavigate();
+
   return (
     <div className="relative size-full bg-white overflow-hidden" style={{ fontFamily: "Inter, sans-serif" }}>
       <div className="absolute inset-0 flex flex-col">
         <div className="flex-1 overflow-y-auto overflow-x-hidden pb-[120px]">
           <div className="flex flex-col items-center w-full">
 
+            {/* Back arrow */}
+            <div className="w-full flex justify-center pt-[60px] px-[16px]">
+              <div className="max-w-[360px] w-full">
+                <button onClick={() => navigate(-1)} className="text-[24px] leading-none">&#8592;</button>
+              </div>
+            </div>
+
             {/* Header */}
-            <div className="w-full flex justify-center pt-[80px] pb-[24px] px-[16px]">
+            <div className="w-full flex justify-center pt-[12px] pb-[24px] px-[16px]">
               <div className="max-w-[360px] w-full">
                 <p className="text-[24px] font-medium text-center">Vendors & run sheets</p>
               </div>
@@ -138,16 +109,6 @@ export default function RunSheets() {
                         <p className="text-[14px] text-[#999]">{vendor.phone}</p>
                       ) : (
                         <a href={`tel:${vendor.phone.replace(/\s/g, "")}`} className="text-[14px] underline">{vendor.phone}</a>
-                      )}
-                    </div>
-
-                    {/* Email */}
-                    <div className="flex items-center gap-[12px] px-[16px] py-[12px] border-b border-[#e5e5e5]">
-                      <span className="text-[16px]">✉️</span>
-                      {isPlaceholder(vendor.email) ? (
-                        <p className="text-[14px] text-[#999]">{vendor.email}</p>
-                      ) : (
-                        <a href={`mailto:${vendor.email}`} className="text-[14px] underline">{vendor.email}</a>
                       )}
                     </div>
 

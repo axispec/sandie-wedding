@@ -100,14 +100,10 @@ export default function HomeWrapper() {
                   <span className="text-[18px] w-[24px] text-center">🍽️</span>
                   <p className="text-[16px] font-medium whitespace-nowrap">Wedding menu</p>
                 </Link>
-                <div className="flex items-center gap-[20px] h-[60px] px-[18px] bg-white">
+                <Link to="/important-vendor-info" className="flex items-center gap-[20px] h-[60px] px-[18px] bg-white hover:bg-[#eee] transition-colors">
                   <span className="text-[18px] w-[24px] text-center">📞</span>
-                  <p className="text-[16px] font-medium whitespace-nowrap">Important contacts</p>
-                </div>
-                <div className="flex items-center gap-[20px] h-[60px] px-[18px] bg-white">
-                  <span className="text-[18px] w-[24px] text-center">🎁</span>
-                  <p className="text-[16px] font-medium whitespace-nowrap">Wedding gifts</p>
-                </div>
+                  <p className="text-[16px] font-medium whitespace-nowrap">Important Vendor Info</p>
+                </Link>
               </div>
             </div>
 

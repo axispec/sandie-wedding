@@ -11,6 +11,7 @@ import SamWyperPhotography from "./pages/SamWyperPhotography";
 import GoselsBusService from "./pages/GoselsBusService";
 import LiveBand from "./pages/LiveBand";
 import Photobooth from "./pages/Photobooth";
+import ImportantVendorInfo from "./pages/ImportantVendorInfo";
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/vendors" element={<Vendors />} />
             <Route path="/wedding-menu" element={<WeddingMenu />} />
             <Route path="/wedding-drinks" element={<WeddingDrinks />} />
+            <Route path="/important-vendor-info" element={<ImportantVendorInfo />} />
           </Routes>
         </div>
       </div>

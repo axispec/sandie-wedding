@@ -329,7 +329,7 @@ export default function Vendors() {
                         <path d={vendorIcons.p3690e500} stroke="#222222" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
                       </svg>
                     </div>
-                    <p className="text-[16px] font-medium">07 5523 5065</p>
+                    <p className="text-[16px] font-medium">07 5524 7878</p>
                   </div>
                   <div className="bg-[#f4f4f4] h-[50px] px-[24px] py-[12px] flex items-center gap-[8px]">
                     <div className="relative shrink-0 size-[24px]">
